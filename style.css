@@ -1,0 +1,120 @@
+ /*premiere grille*/
+ .grid1 {
+    position: fixed;
+    background: hsla(0,0%,100%,.98);
+    transition: box-shadow .25s ease 0s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+ 
+ /*le logo*/
+  img {
+    position: relative;
+    float: left;
+    width: 268px ;
+    height:50px ;
+  }
+  /*positionement du menu*/
+  nav  {
+    position: relative;
+    float: right;
+    margin-left: 270px;
+  }  
+  
+  /* style des liens de la barre  */
+  .nav a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Prompt', sans-serif;
+    color: gray;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .nav a:hover {
+    border-bottom: 3px rgb(47, 255, 217);
+  color: rgb(47, 255, 217);
+  text-decoration: none;
+  }
+  
+  .nav a.active {
+    border-bottom: 3px  rgb(47, 255, 217);
+  }
+
+  /*le menu deroulant*/
+  /*section 1*/
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /*le logo de la section 1*/
+  .logo {
+    margin: 0 auto;
+    height: auto;
+    width: 70px;
+    
+  }
+  .paragraphe1 {
+    font-size: 3.125rem;
+    color:#00b39b;;
+    font-family: 'Prompt', sans-serif;
+  }
+
+  .sectiondiv1{
+    display: flex;
+    justify-content: center;
+  }
+  /*la section 2 avec ces 2 div de paragraphes*/
+  .section2 {
+    display:flex;
+    justify-content: center;
+  }
+  .div1 {
+    margin-right: 20px;
+    }
+
+  .div2 {
+    margin-left: 20px;
+  }
+  
+  p{
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+    color: gray;
+  }
+  /*la troisieme section de notre travail*/
+  .section3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 280px;
+    margin-top: 15px;
+
+  }
+
+  /*les couleurs en arrieres plan des div de la section 3  leur positionement et leur forme*/
+  .div3{
+    background-color: #00b39b;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  .div4{
+    background-color:aqua;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .div5{
+    background-color: black;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+  }
