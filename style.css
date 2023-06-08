@@ -60,6 +60,7 @@
     width: 70px;
     
   }
+  /*le texte en bas du logo*/
   .paragraphe1 {
     font-size: 3.125rem;
     color:#00b39b;;
@@ -98,23 +99,76 @@
 
   }
 
-  /*les couleurs en arrieres plan des div de la section 3  leur positionement et leur forme*/
+  /*les couleurs en arrieres plan des div generale de la section 3  
+  leur positionement et leur forme ds un premier temps 
+  je retravallerai sur elle qlq cm plus bas */
   .div3{
-    background-color: #00b39b;
-    height: 300px;
+    background-color: #20e4ca;
+    height: 400px;
     width: 300px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
   }
   .div4{
-    background-color:aqua;
-    height: 300px;
+    background-color:blue;
+    height: 400px;
     width: 300px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .div5{
-    background-color: black;
-    height: 300px;
+    background-color: rgb(16, 3, 50);
+    height: 400px;
     width: 300px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*les h2 et h3 de toute les divs  de la section3*/
+  .texte1 , .texte2 {
+    color: #fff;
+    font-family: 'Prompt', sans-serif;
+  }
+  /*les premieres div de la section3 je vais les appeler la div generale car elles contiennent 
+  tte les autres div */
+  .div3 , .div4 , .div5 {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+  }
+  /*les premieres div de la div 3-4-5 qui contient tous les elements image texte et selecteur de pays*/
+  .ediv1 , .ediv2 , .ediv3{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    
+  }
+
+  /*le selcteur de la div 3 et 4 pour les pays  */
+  /*le selecteur de la div 5 demande de choisir des specialistes et le nombre 
+  differe selon la base de données cependant je me limiterai a un selecteur du meme genre */
+  select {
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  select option {
+    background-color: #fff;
+    color: #333;
   }
