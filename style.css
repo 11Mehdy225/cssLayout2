@@ -1,3 +1,30 @@
+ /*position relative et position absolue*/
+body {
+  position: relative;
+ }
+ /*css querry media*/
+ /* Styles pour les écrans de bureau */
+ @media (min-width: 992px) and (max-width: 1200px) {
+  body {
+    width: 50%;
+    float: left;
+  }
+}
+/*les appareils plus larges*/
+@media (min-width: 1200px) {
+  body {
+    width: 100%;
+  }
+}
+
+/* Styles pour les écrans mobiles */
+@media  ( min-width: 576px) and (max-width: 767px) {
+  body {
+    width: 100%;
+    float: none;
+  }
+}
+
  /*premiere grille*/
  .grid1 {
     position: fixed;
@@ -7,6 +34,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    z-index: 1;
  }
  
  /*le logo*/
@@ -212,12 +240,22 @@
     background-image: url('backgroung.png');
      background-repeat: no-repeat;
      background-size: cover;
+     width: 100%;
      display: flex;
      margin-top: -280px;
-     justify-content: space-between;
      align-items: center;
+     
   }
-  /*le texte de la section 5*/
+
+  /*notre div qui contient tout les elements de la statistique */
+  .section5prime {
+              display: flex;
+    }
+  
+   
+  
+
+  /*notre premiere grande div  qui annonce les statistiques*/ 
   .introstat h1 {
     margin: 0;
   }
@@ -226,3 +264,192 @@
     margin-left: 180px;
     margin-top: 50px;
   }
+  /*les statistiques nous en avons 4 chacune dans une div stat conteneur gle et enfant stat1 stat2 stat3 stat4*/
+  .stat {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+
+  /*les textes de nos statistique*/
+  .stat h2 {
+    text-align: center;
+  }
+
+  /*les differentes div de nos statistique*/
+  .stat1  {
+    display:flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 0;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .stat2 {
+    display:flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 250px;
+    height: 300px;
+    
+  }
+  .stat3 {
+    display:flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .stat4 {
+    display:flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column;
+    border-radius: 5%;
+    width: 250px;
+    height: 300px;
+   
+  }
+   /*les icones de notre div*/ 
+  
+  .flag {
+    width: 35px;
+    height :40px;
+    
+  }
+
+ /*la section 6 un petit texte*/ 
+ .section6 {
+  text-align: center;
+ }
+ /*la section 7 qui comprend les villes */
+ .section7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+  /*je vais a present partager les 9 images en 3 par lignes a partir de 3 div de class*/
+  
+  .top{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+  }
+
+  .middle {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+
+ 
+ /*les images des villes*/
+ .offim {
+      position: relative;
+      width: 293px;
+      height: 270px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      margin-left: 10px;
+      z-index: 0;
+ }
+ /*les div figure et leur legendes*/
+ figure {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  
+ }
+ .figcaption {
+  font-family: 'Prompt', sans-serif;
+ }
+ 
+
+ /*les boutons des legendes*/
+ .plus {
+  margin-left: 70px;
+  margin-top: 25px;
+  background-color:#3d83df;
+  color: #fff;
+  font-family: 'Prompt', sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+ }
+
+ .plus:hover {
+  background-color: #011f46;
+ }
+
+ /*la section 8 qui contient un texte d'invitation et un bouton rejoignez nous*/
+ .section8 {
+  text-align: center;
+ }
+ /*Le boutton*/
+ .bluebutton {
+  background-color:#3d83df;
+  color: #fff;
+  font-family: 'Prompt', sans-serif;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+ }
+ /*notre footer*/
+ footer {
+  border-top: 1px solid grey;
+  width: 100%;
+ }
+ .leader {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+ }
+
+ p.leader a {
+  text-decoration: none;
+  color: rgb(56, 56, 176);
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+p.leader a:hover {
+  text-decoration: underline;
+}
